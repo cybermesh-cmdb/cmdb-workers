@@ -1,0 +1,162 @@
+﻿TenantID;Location;Treashold minutos;HostName;HostIP;Customer;Device Type;Fabricante
+01110006-Atvos;/var/log/Cybermesh/Linux_Centos_10.164.4.137.log;1440;appsecl007;10.164.4.137;Atvos;Linux;Centos
+01110006-Atvos;/var/log/Cybermesh/Linux_Centos_10.164.6.209.log;120;s04srv0422;10.164.6.209;Atvos;Linux;Centos
+01110006-Atvos;/var/log/Cybermesh/Linux_Centos_10.164.6.31.log;1440;nsgcpinfral001;10.164.6.31;Atvos;Linux;Centos
+01110006-Atvos;/var/log/Cybermesh/Linux_Centos_10.164.6.41.log;1440;ntpgcpinfral001;10.164.6.41;Atvos;Linux;Centos
+01110006-Atvos;/var/log/Cybermesh/Linux_Centos_10.164.6.32.log;1440;nsgcpinfral002;10.164.6.32;Atvos;Linux;Centos
+01110006-Atvos;/var/log/Cybermesh/Linux_10.164.6.50.log;1440;s04gcp0001li;10.164.6.50;Atvos;Linux;Linux
+01110006-Atvos;/var/log/Cybermesh/Linux_Oracle_10.159.62.200.log;1440;agrodbprdoci01;10.159.62.200;Atvos;Linux;Oracle
+01110006-Atvos;/var/log/Cybermesh/Linux_Oracle_10.159.62.202.log;1440;agrodbprdoci02;10.159.62.202;Atvos;Linux;Oracle
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.224.14.log;120;s01gcp0002li;10.164.224.14;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.224.19.log;1440;s01gcp0011li;10.164.224.19;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.232.23.log;1440;s02gcp0016li;10.164.232.23;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.234.10.log;1440;s03gcp0017li;10.164.234.10;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.234.17.log;1440;s03gcp0008li;10.164.234.17;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.234.22.log;1440;s03gcp0014li;10.164.234.22;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.234.61.log;1440;s03gcp0013li;10.164.234.61;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.238.10.log;1440;s03gcp0001li;10.164.238.10;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.164.238.23.log;1440;s03gcp0015li;10.164.238.23;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.172.0.20.log;1440;s03gcp0011li;10.172.0.20;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.175.20.10.log;120;s02gcp0013li;10.175.20.10;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.175.20.12.log;1440;s03gcp0024li;10.175.20.12;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/Linux_SUSE_10.175.20.9.log;1440;s03gcp0016li;10.175.20.9;Atvos;Linux;SUSE
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.20.1.log;60;FW-ATVOS-URC;10.162.20.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.20.4.log;60;FW-AUTMACAO-URC;10.162.20.4;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.21.5.log;60;FW-AUTMACAO-USL;10.162.21.5;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.24.29.log;60;FW-AUTOMACAO-UEL;10.162.24.29;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.26.1.log;60;FW-ATVOS-USL;10.162.26.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.26.114.log;60;FW-AUTMOCAO-USL;10.162.26.114;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.32.1.log;60;FW-ATVOS-UCP;10.162.32.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.32.165.log;60;FW-AUTOMACAO-UCP;10.162.32.165;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.24.1.log;60;FW-ATVOS-UEL;10.164.24.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.32.61.log;120;FW-AUTMACAO-UMV;10.164.32.61;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.34.1.log;60;FW-ATVOS-UMV-01;10.164.34.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.60.1.log;60;FW-ATVOS-UCR;10.164.60.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.60.230.log;60;FW-AUTMOCAO-UCR;10.164.60.230;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.76.1.log;60;FW-UAT;10.164.76.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.76.230.log;60;FW-AUTMACAO-UAT;10.164.76.230;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.80.1.log;60;FW-UAE;10.164.80.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.80.40.log;60;FW-AUTOMACAO-UAE;10.164.80.40;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.168.184.1.log;1440;FW-ESC-MINEIROS;10.168.184.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.172.44.1.log;60;FW-DC-EQUINIX-1;10.172.44.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.173.0.1.log;60;FW-ATVOS-URC;10.173.0.1;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.173.6.2.log;1440;Panorama;10.173.6.2;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.162.32.165.log;60;FW-AUTOMACAO-UCP;10.162.32.165;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.173.6.230.log;60;FW-ESC-ATVOS;10.173.6.230;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/PA-10.164.32.110.log;1440;FW-ESC-MINEIROS;10.164.32.110;Atvos;Firewall;Palo Alto
+01110006-Atvos;/var/log/Cybermesh/crowdstrike_tcp515.log;30;Crowdstike;Crowdstrike;Atvos;Crowdstrike;Crowdstrike
+01160009-Berneck;/var/log/Cybermesh/AIX_172.17.1.220.log;120;aucs0040;172.17.1.220;Berneck;IBM AIX;IBM
+01160009-Berneck;/var/log/Cybermesh/AIX_172.17.1.218.log;120;aucs0039;172.17.1.218;Berneck;IBM AIX;IBM
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_10.14.0.211.log;120;FW-LAGES-PAINEIS;10.14.0.211;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_10.14.0.212.log;120;FW-LAGES-SERRADOS;10.14.0.212;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.17.0.210.log;120;FW-ARAUCARIA-SERRARIA;172.17.0.210;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.17.0.211.log;120;FW-ARAUCARIA-MDF;172.17.0.211;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.17.0.212.log;120;FW-ARAUCARIA-MDP;172.17.0.212;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.21.0.210.log;1440;FW-BRASNORTE-SERRARIA;172.21.0.210;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.21.0.212.log;120;FW-BRASNORTE-SILO;172.21.0.212;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.27.0.210.log;120;FW-CURITIBANOS-MDP;172.27.0.210;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.27.0.212.log;120;FW-CURITIBANOS-SERRADOS;172.27.0.212;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall-Industrial_172.27.0.214.log;21600;FW-CURITIBANOS-BP;172.27.0.214;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.14.0.252.log;120;FW-LagesCore;10.14.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.16.3.7.log;120;BRN-FW1;10.16.3.7;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.252.10.2.log;120;CTB-FW1;10.252.10.2;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.60.0.252.log;120;FW-FAZENDAS-SAODOMINGOS;10.60.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.61.0.252.log;120;FW-FAZENDAS-TARUMA;10.61.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.64.0.252.log;120;FW-FAZENDAS-PRIMAVERA;10.64.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.66.0.252.log;120;FAZ_REALSUL;10.66.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.67.0.252.log;120;Faz_Marandu;10.67.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.69.0.252.log;120;Faz_SaoBernardo;10.69.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.70.0.252.log;1440;FW-FAZENDAS-SANTATEREZA;10.70.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.80.0.253.log;120;FW-FAZENDAS-ALAMOS;10.80.0.253;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.81.0.252.log;120;FW-FAZ_RIO_BONITO;10.81.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.90.0.252.log;120;FW-FRP;10.90.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.91.0.252.log;120;Faz_Cache;10.91.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.92.0.252.log;120;Faz_Rio_Canoas;10.92.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.95.0.252.log;120;Escritorio_Central;10.95.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_10.96.0.252.log;120;FW-Faz-CorreiaPinto;10.96.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Firewall_172.16.0.252.log;120;AUC-FW1;172.16.0.252;Berneck;Firewall;Fortinet/Fortigate
+01160009-Berneck;/var/log/Cybermesh/Switch_10.14.3.254.log;21600;CORE;10.14.3.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_172.21.0.254.log;720;BRNN20254;172.21.0.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_172.26.0.1.log;720;SW_CTB_ADM_CORE;172.26.0.1;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_172.16.0.1.log;720;CHS_SWC_AUC_7506_001;172.16.0.1;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.40.255.254.log;21600;SWC_LAG_IND_MDF;10.40.255.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.35.16.1.log;21600;SW_CTB_CORE_BPS;10.35.16.1;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.22.0.10.log;720;SWC_AUC_IND_SRR_CMC_5130_010;10.22.0.10;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.20.0.254.log;1440;SWC_AUC_IND_MDP_SCP_5510_254;10.20.0.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.30.0.254.log;21600;SW_CTB_IND_MDP_CCM4_CORE;10.30.0.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.32.0.254.log;120;SW_CTB_IND_SER_CCM1_COR-01;10.32.0.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.42.0.254.log;21600;SW_CORE_SERRADOS;10.42.0.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_172.16.0.240.log;120;SWC_AUC_MDF_IND_5500_240;172.16.0.240;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.31.0.1.log;1440;SWI_MDF_CTB;10.31.0.1;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/Switch_10.40.7.254.log;28800;SWI_MDF_LAG;10.40.7.254;Berneck;Switch;ARUBA/HP
+01160009-Berneck;/var/log/Cybermesh/TrendMicroAlerts.json;60;TrendMicro EDR;API;Berneck;Antivirus/Antimalware;TrendMicro
+01160009-Berneck;/var/log/Cybermesh/VMware_172.17.1.180.log;120;Vmmailadm.berneckadm;172.17.1.180;Berneck;Vmware;Vmware
+01190002-LNCC;/var/log/cybermesh/Huawei_200.143.240.96.log;60;;200.143.240.96;LNCC;Firewall;Huawei
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.8.169.log;60;;146.134.8.169;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.244.22.log;60;;146.134.244.22;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.244.171.log;60;;146.134.244.171;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.8.104.log;60;;146.134.8.104;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.8.122.log;60;;146.134.8.122;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.8.150.log;60;;146.134.8.150;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.8.160.log;60;;146.134.8.160;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.8.188.log;60;tyrion;146.134.8.188;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.9.23.log;60;;146.134.9.23;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.9.24.log;60;;146.134.9.24;LNCC;Linux;Ubuntu
+01190002-LNCC;/var/log/cybermesh/Sophos_NGFW.log;60;sophos-apstra.infra.lncc.br;146.134.0.29;LNCC;Firewall;Sophos
+01190002-LNCC;/var/log/cybermesh/VCenter_146.134.8.144.log;119;;146.134.8.144;LNCC;Vcenter;Vmware
+01190002-LNCC;/var/log/cybermesh/Netflow.log;30;netflow_lncc;-;LNCC;Netflow;Netflow
+01250003-BLAU;/var/log/firewalls/10.30.0.1.log;60;FW-CAU-001;10.30.0.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/10.40.0.1.log;60;FW-PLM-001;10.40.0.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/10.56.0.1.log;60;FW-CHI-001;10.56.0.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/10.57.0.1.log;60;FW-COL-001;10.57.0.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/10.58.0.1.log;60;FW-URU-001;10.58.0.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/172.16.254.114.log;60;FWOT01CTP1001ANDCPD;172.16.254.114;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/172.16.254.225.log;60;FW01CTP1001ANDCPD;172.16.254.225;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/172.17.252.1.log;60;FW-SPO-002;172.17.252.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/172.20.252.1.log;60;FW-CJ-001;172.20.252.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/172.24.21.1.log;60;FW-BRG-001;172.24.21.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/172.26.21.1.log;60;FW-LOG-001;172.26.21.1;BLAU;Firewall;Fortinet/Fortigate
+01250003-BLAU;/var/log/firewalls/SentinelOne.log;180;Sentinel One;;BLAU;Sentinel One;Microsoft
+01250004-Adeste;/var/log/Cybermesh/10.0.0.1.log;60;FG-GRUPOADESTE-SANTO-ANDRE-1;10.0.0.1;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/10.0.8.254.log;60;FG-GRUPOADESTE-CAMPOGRANDE-HA1;10.0.8.254;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/100.64.145.200.log;60;FG-ADESTE-EQX-SP4-01;100.64.145.200;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/100.64.145.43.log;1440;SRVDTCW0022;100.64.145.43;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/172.16.72.4.log;60;FG-GRUPOADESTE-CABIXI-HA2;172.16.72.4;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/172.16.84.1.log;60;FG-GRUPOADESTE-SAO-PAULO-HA2;172.16.84.1;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/192.168.1.4.log;60;FG-GRUPOADESTE-TATUI-HA1;192.168.1.4;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/192.168.10.1.log;60;FG-GRUPOADESTE-JAGUAPITA-2;192.168.10.1;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/192.168.11.1.log;60;FG-GRUPOADESTE-JAGUAPITA-INNOVA-HA2;192.168.11.1;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/192.168.2.1.log;60;FG-GRUPOADESTE-ARACATUBA-HA1;192.168.2.1;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/192.168.4.4.log;60;FG-GRUPOADESTE-BOTUCATU-HA1;192.168.4.4;Adeste;Firewall;Fortinet/Fortigate
+01250004-Adeste;/var/log/Cybermesh/kaspersky.log;119;Karspersky;Karspersky;Adeste;Antivirus/Antimalware;Kaspersky
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG100ETK18001189.log;120;US-GIB-FW-001;130.213.32.162;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG100FTK19023790.log;120;US-CPG-FW-001;102.135.44.54;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG100FTK21004569.log;120;BR-CPS-FW-001;10.11.105.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG100FTK21007968.log;120;BR-LRV-FW-001;10.11.70.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG100FTK21008511.log;120;BR-PNC-FW-001;10.11.38.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG100FTK21009484.log;120;BR-CAM-FW-001;10.11.118.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG200FT922932279.log;120;AR-CHA-FW-001;10.10.121.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FG200FT923903105.log;120;BR-PMP-FW-001;10.10.121.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60E4Q16006811.log;120;BR-PEC-FW-001;10.11.141.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60E4Q16041130.log;120;AR-BAC-FW-001;200.41.186.254;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60E4Q16042007.log;120;AR-CHC-FW-001;8.243.139.254;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60E4Q16042341.log;120;AR-MOC-FW-001;168.197.165.15;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60ETK18074959.log;120;AR-CRA-FW-001;10.10.6.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60ETK19067027.log;120;US-JOW-FW-001;193.24.123.15;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60ETK19067739.log;120;US-DES-FW-001;10.10.230.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60FTK2109AQ26.log;120;BR-VOT-FW-001;177.67.240.42;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60FTK2109AQ3J.log;120;BR-RIV-FW-001;10.11.6.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60FTK2109AQER.log;120;BR-PNP-FW-001;10.11.94.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60FTK22041001.log;120;AR-TUC-FW-001;10.10.22.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60FTK2209GQT0.log;120;BR-PMC-FW-001;10.11.133.1;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/Firewall_FGT60FTK2209H3R8.log;120;US-HUT-FW-001;64.159.206.250;GDMSementes;Firewall;Fortinet/Fortigate
+01250005-GDMSementes;/var/log/Cybermesh/VMware_10.10.121.71.log;120;AR-CHA-CT-001;10.10.121.71;GDMSementes;Vmware;Vmware
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.10.150.10.log;1440;;10.10.150.10;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.10.121.200.log;1440;;10.10.121.200;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.10.22.10.log;120;;10.10.22.10;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.11.14.10.log;120;;10.11.14.10;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.11.118.10.log;120;;10.11.118.10;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.11.105.10.log;120;;10.11.105.10;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.11.70.11.log;120;;10.11.70.11;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.10.70.10.log;1440;;10.10.70.10;GDMSementes;Switch;
+01250005-GDMSementes;/var/log/Cybermesh/Switch_10.10.121.20.log;1440;;10.10.121.20;GDMSementes;Switch;
