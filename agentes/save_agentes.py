@@ -64,6 +64,27 @@ def require_env(name: str) -> str:
         raise RuntimeError(f"Variavel de ambiente obrigatoria ausente: {name}")
     return value
 
+
+def get_env_first(*names: str) -> str:
+    for name in names:
+        value = os.getenv(name, "").strip()
+        if value:
+            return value
+    raise RuntimeError(f"Variavel de ambiente obrigatoria ausente: {' ou '.join(names)}")
+
+
+def build_wazuh_base_url() -> str:
+    explicit_url = os.getenv("WAZUH_BASE_URL", "").strip()
+    if explicit_url:
+        return explicit_url.rstrip("/")
+
+    host = os.getenv("AGENTLESS_HOST", "").strip()
+    port = os.getenv("AGENTLESS_PORT", "").strip() or "55000"
+    if host:
+        return f"https://{host}:{port}"
+
+    return "https://127.0.0.1:55000"
+
 # ==========================================
 # CONFIGURAÇÕES DA API DO WAZUH
 # ==========================================
@@ -74,9 +95,9 @@ SYNC_INTERVAL_SECONDS = int(os.getenv("SYNC_INTERVAL_SECONDS", "30"))
 RUN_FOREVER = env_bool("RUN_FOREVER", default=False)
 
 WAZUH_CONFIG = {
-    "base_url": os.getenv("WAZUH_BASE_URL").rstrip("/"),
-    "user": require_env("WAZUH_USER"),
-    "password": require_env("WAZUH_PASSWORD"),
+    "base_url": build_wazuh_base_url(),
+    "user": get_env_first("WAZUH_USER"),
+    "password": get_env_first("WAZUH_PASSWORD"),
     "limit": int(os.getenv("WAZUH_LIMIT", "500")),
 }
 
