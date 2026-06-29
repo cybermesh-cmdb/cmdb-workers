@@ -86,23 +86,31 @@ WAZUH_REQUEST_TIMEOUT = int(os.getenv("WAZUH_TIMEOUT_SECONDS", "15"))
 SYNC_INTERVAL_SECONDS = int(os.getenv("SYNC_INTERVAL_SECONDS", "30"))
 RUN_FOREVER = env_bool("RUN_FOREVER", default=False)
 
-WAZUH_CONFIG = {
-    "base_url": build_wazuh_base_url(),
-    "user": require_env("WAZUH_USER"),
-    "password": require_env("WAZUH_PASSWORD"),
-    "limit": int(os.getenv("WAZUH_LIMIT", "500")),
-}
+WAZUH_CONFIG = {}
 
 # ==========================================
 # CONFIGURAÇÕES DO BANCO DE DADOS
 # ==========================================
-DB_CONFIG = {
-    "host": os.getenv("PGHOST"),
-    "port": int(os.getenv("PGPORT")),
-    "dbname": os.getenv("PGDATABASE"),
-    "user": os.getenv("PGUSER"),
-    "password": os.getenv("PGPASSWORD"),
-}
+DB_CONFIG = {}
+
+
+def build_wazuh_config() -> dict:
+    return {
+        "base_url": build_wazuh_base_url(),
+        "user": require_env("WAZUH_USER"),
+        "password": require_env("WAZUH_PASSWORD"),
+        "limit": int(os.getenv("WAZUH_LIMIT", "500")),
+    }
+
+
+def build_db_config() -> dict:
+    return {
+        "host": require_env("PGHOST"),
+        "port": int(require_env("PGPORT")),
+        "dbname": require_env("PGDATABASE"),
+        "user": require_env("PGUSER"),
+        "password": require_env("PGPASSWORD"),
+    }
 
 
 def log_startup_diagnostics() -> None:
@@ -110,10 +118,10 @@ def log_startup_diagnostics() -> None:
     logger.info("dotenv_path=%s | dotenv_loaded=%s", dotenv_path, DOTENV_LOADED)
     logger.info(
         "Wazuh config: base_url=%s | verify_ssl=%s | timeout=%ss | limit=%s",
-        WAZUH_CONFIG["base_url"],
+        build_wazuh_base_url(),
         WAZUH_VERIFY_SSL,
         WAZUH_REQUEST_TIMEOUT,
-        WAZUH_CONFIG["limit"],
+        int(os.getenv("WAZUH_LIMIT", "500")),
     )
     logger.info(
         "Wazuh env presentes: WAZUH_USER=%s | WAZUH_PASSWORD=%s | WAZUH_BASE_URL=%s",
@@ -123,10 +131,10 @@ def log_startup_diagnostics() -> None:
     )
     logger.info(
         "DB config: host=%s | port=%s | db=%s | user=%s | password_set=%s",
-        DB_CONFIG.get("host"),
-        DB_CONFIG.get("port"),
-        DB_CONFIG.get("dbname"),
-        DB_CONFIG.get("user"),
+        os.getenv("PGHOST"),
+        os.getenv("PGPORT"),
+        os.getenv("PGDATABASE"),
+        os.getenv("PGUSER"),
         bool(os.getenv("PGPASSWORD", "").strip()),
     )
     logger.info(
@@ -482,7 +490,20 @@ def run_sync_cycle() -> None:
     logger.info("[%s] Sincronizacao finalizada.", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 def main() -> None:
+    global WAZUH_CONFIG, DB_CONFIG
+
     log_startup_diagnostics()
+
+    try:
+        WAZUH_CONFIG = build_wazuh_config()
+        DB_CONFIG = build_db_config()
+    except RuntimeError as cfg_err:
+        logger.error("Erro de configuracao: %s", cfg_err)
+        raise SystemExit(2)
+    except ValueError as cfg_err:
+        logger.error("Erro de configuracao numerica: %s", cfg_err)
+        raise SystemExit(2)
+
     if RUN_FOREVER:
         logger.info("Modo continuo habilitado. Intervalo: %s segundo(s)", SYNC_INTERVAL_SECONDS)
         while True:
