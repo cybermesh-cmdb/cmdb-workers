@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sincroniza agentes Wazuh da API diretamente para o CMDB a cada 30 segundos."""
+
 
 from __future__ import annotations
 
@@ -42,7 +42,7 @@ except ImportError:
         return loaded
 
 dotenv_path = Path(__file__).with_name(".env")
-load_dotenv(dotenv_path=dotenv_path)
+DOTENV_LOADED = load_dotenv(dotenv_path=dotenv_path)
 
 logging.basicConfig(
     level=getattr(logging, os.getenv("LOG_LEVEL", "INFO").upper(), logging.INFO),
@@ -65,25 +65,17 @@ def require_env(name: str) -> str:
     return value
 
 
-def get_env_first(*names: str) -> str:
-    for name in names:
-        value = os.getenv(name, "").strip()
-        if value:
-            return value
-    raise RuntimeError(f"Variavel de ambiente obrigatoria ausente: {' ou '.join(names)}")
-
-
 def build_wazuh_base_url() -> str:
     explicit_url = os.getenv("WAZUH_BASE_URL", "").strip()
     if explicit_url:
         return explicit_url.rstrip("/")
 
-    host = os.getenv("AGENTLESS_HOST", "").strip()
-    port = os.getenv("AGENTLESS_PORT", "").strip() or "55000"
+    host = os.getenv("WAZUH_HOST", "").strip()
+    port = os.getenv("WAZUH_PORT", "").strip() or "55000"
     if host:
         return f"https://{host}:{port}"
 
-    return "https://127.0.0.1:55000"
+    return "https://172.31.0.16:55000" 
 
 # ==========================================
 # CONFIGURAÇÕES DA API DO WAZUH
@@ -96,8 +88,8 @@ RUN_FOREVER = env_bool("RUN_FOREVER", default=False)
 
 WAZUH_CONFIG = {
     "base_url": build_wazuh_base_url(),
-    "user": get_env_first("WAZUH_USER"),
-    "password": get_env_first("WAZUH_PASSWORD"),
+    "user": require_env("WAZUH_USER"),
+    "password": require_env("WAZUH_PASSWORD"),
     "limit": int(os.getenv("WAZUH_LIMIT", "500")),
 }
 
@@ -111,6 +103,38 @@ DB_CONFIG = {
     "user": os.getenv("PGUSER"),
     "password": os.getenv("PGPASSWORD"),
 }
+
+
+def log_startup_diagnostics() -> None:
+    logger.info("========== Diagnostico do agentes-worker ==========")
+    logger.info("dotenv_path=%s | dotenv_loaded=%s", dotenv_path, DOTENV_LOADED)
+    logger.info(
+        "Wazuh config: base_url=%s | verify_ssl=%s | timeout=%ss | limit=%s",
+        WAZUH_CONFIG["base_url"],
+        WAZUH_VERIFY_SSL,
+        WAZUH_REQUEST_TIMEOUT,
+        WAZUH_CONFIG["limit"],
+    )
+    logger.info(
+        "Wazuh env presentes: WAZUH_USER=%s | WAZUH_PASSWORD=%s | WAZUH_BASE_URL=%s",
+        bool(os.getenv("WAZUH_USER", "").strip()),
+        bool(os.getenv("WAZUH_PASSWORD", "").strip()),
+        bool(os.getenv("WAZUH_BASE_URL", "").strip()),
+    )
+    logger.info(
+        "DB config: host=%s | port=%s | db=%s | user=%s | password_set=%s",
+        DB_CONFIG.get("host"),
+        DB_CONFIG.get("port"),
+        DB_CONFIG.get("dbname"),
+        DB_CONFIG.get("user"),
+        bool(os.getenv("PGPASSWORD", "").strip()),
+    )
+    logger.info(
+        "Execucao: run_forever=%s | sync_interval_seconds=%s",
+        RUN_FOREVER,
+        SYNC_INTERVAL_SECONDS,
+    )
+    logger.info("===================================================")
 
 if not WAZUH_VERIFY_SSL:
     # Mantem o aviso desativado apenas quando SSL verification foi explicitamente desativada.
@@ -159,6 +183,7 @@ STATUS_MAP = {
 def get_wazuh_token() -> str:
     logger.info("Autenticando na API do Wazuh...")
     auth_url = f"{WAZUH_CONFIG['base_url']}/security/user/authenticate?raw=true"
+    logger.info("URL de autenticacao: %s", auth_url)
     response = HTTP_SESSION.get(
         auth_url,
         auth=(WAZUH_CONFIG['user'], WAZUH_CONFIG['password']),
@@ -201,6 +226,7 @@ def get_all_agents(token: str) -> list[dict]:
 
         offset += limit
 
+    logger.info("Total de agentes recebidos da API: %s", len(all_agents))
     return all_agents
 
 # --- FUNÇÕES DE BANCO DE DADOS (MANTIDAS DO SEU SCRIPT) ---
@@ -456,6 +482,7 @@ def run_sync_cycle() -> None:
     logger.info("[%s] Sincronizacao finalizada.", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 def main() -> None:
+    log_startup_diagnostics()
     if RUN_FOREVER:
         logger.info("Modo continuo habilitado. Intervalo: %s segundo(s)", SYNC_INTERVAL_SECONDS)
         while True:
