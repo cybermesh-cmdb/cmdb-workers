@@ -74,7 +74,7 @@ SYNC_INTERVAL_SECONDS = int(os.getenv("SYNC_INTERVAL_SECONDS", "30"))
 RUN_FOREVER = env_bool("RUN_FOREVER", default=False)
 
 WAZUH_CONFIG = {
-    "base_url": os.getenv("WAZUH_BASE_URL", "https://127.0.0.1:55000").rstrip("/"),
+    "base_url": os.getenv("WAZUH_BASE_URL").rstrip("/"),
     "user": require_env("WAZUH_USER"),
     "password": require_env("WAZUH_PASSWORD"),
     "limit": int(os.getenv("WAZUH_LIMIT", "500")),

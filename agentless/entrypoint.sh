@@ -1,5 +1,5 @@
 #!/bin/sh
-set -eu
+set -u
 
 INTERVAL_SECONDS="${AGENTLESS_INTERVAL_SECONDS:-1200}"
 RUN_ONCE="${AGENTLESS_RUN_ONCE:-false}"
@@ -13,8 +13,11 @@ esac
 
 while true; do
   echo "[agentless-worker] Iniciando ciclo: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-  python save_agentless_txt.py
-  EXIT_CODE=$?
+  if python save_agentless_txt.py; then
+    EXIT_CODE=0
+  else
+    EXIT_CODE=$?
+  fi
   echo "[agentless-worker] Ciclo finalizado com codigo: $EXIT_CODE"
 
   if [ "$RUN_ONCE" = "true" ]; then
