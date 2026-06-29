@@ -817,11 +817,10 @@ def main():
                     threshold_str,
                     status_value,
                 )
-                exit_code = 1
+                if error != "No events found":
+                    exit_code = 1
             else:
                 row = build_row(entry, last_ts)
-                if row[-1] == "FORA":
-                    exit_code = 1
 
             if row[7] == "No events found":
                 no_events_found_rows += 1
