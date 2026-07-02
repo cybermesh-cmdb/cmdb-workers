@@ -140,15 +140,7 @@
 01160009-Berneck;/var/log/Cybermesh/check_logstoppage.log;20;Berneck-LogStoppage;172.17.1.111;Berneck;Logstoppage;Cybermesh
 01160009-Berneck;command_azure-msgraph;;Azure MsGraph;MsGraph;Berneck;Azure MsGraph;Azure
 01160009-Berneck;office365;;Office 365;Office365;Berneck;Office 365;Microsoft
-01190002-LNCC;/var/log/containers/dockthor/apache2/access-ssl.log.1;;DockThor_access-ssl;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/containers/dockthor/apache2/accessv2.log.1;;DockThor_accessv2;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/containers/dockthor/apache2/error-ssl.log.1;;DockThor_error-ssl;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/containers/dockthor/apache2/errorv2.log.1;;DockThor_errorv2;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/containers/dockthor/apache2/other_vhosts_access.log.1;;DockThor_other-vhosts;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/containers/dockthor/auth.log;;DockThor_auth;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/containers/dockthor/kern.log;;DockThor_kern;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/containers/dockthor/syslog/syslog;;DockThor_syslog;- ;LNCC;Container;Docker
-01190002-LNCC;/var/log/cybermesh/CiscoAsa.log;;ciscovpn;146.134.0.14;LNCC;Firewall;Cisco ASA
+01190002-LNCC;/var/log/cybermesh/CiscoAsa.log;60;ciscovpn;146.134.0.14;LNCC;Firewall;Cisco ASA
 01190002-LNCC;/var/log/cybermesh/Huawei_200.143.240.96.log;60;200.143.240.96;200.143.240.96;LNCC;Firewall;Huawei
 01190002-LNCC;/var/log/cybermesh/ESXi_146.134.244.52.log;119;vmhostacesso1.noc.lncc.br;146.134.255.52;LNCC;ESXi;Vmware
 01190002-LNCC;/var/log/cybermesh/LinuxUbuntu_146.134.8.169.log;60;146.134.8.169;146.134.8.169;LNCC;Linux;Ubuntu
